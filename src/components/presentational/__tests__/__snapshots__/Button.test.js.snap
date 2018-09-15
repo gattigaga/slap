@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should renders default 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.p>
+    My Own Button
+  </styled.p>
+</styled.div>
+`;
+
+exports[`Button should renders with icon 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <Dummy />
+  <styled.p>
+    My Own Button
+  </styled.p>
+</styled.div>
+`;
