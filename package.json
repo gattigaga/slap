@@ -40,5 +40,15 @@
     "jest-styled-components": "^6.2.0",
     "prettier": "^1.14.2",
     "redux-mock-store": "^1.5.3"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/setupTests.js",
+      "!src/index.js"
+    ]
   }
 }
