@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thumbnail should renders default 1`] = `
+<styled.svg
+  height={180}
+  onClick={[Function]}
+  width={240}
+>
+  <styled.text
+    fontSize={12}
+    key="content-1"
+    x={12}
+    y={12}
+  >
+    Hello World
+  </styled.text>
+  <styled.text
+    fontSize={12}
+    key="content-2"
+    x={48}
+    y={36}
+  >
+    Stay hungry
+  </styled.text>
+</styled.svg>
+`;
+
+exports[`Thumbnail should renders without contents 1`] = `
+<styled.svg
+  height={180}
+  onClick={[Function]}
+  width={240}
+/>
+`;
