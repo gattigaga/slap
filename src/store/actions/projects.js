@@ -1,5 +1,6 @@
 export const ADD_PROJECT = "ADD_PROJECT";
 export const REMOVE_PROJECT = "REMOVE_PROJECT";
+export const UPDATE_PROJECT = "UPDATE_PROJECT";
 
 /**
  * Get action to add new project
@@ -19,4 +20,18 @@ export const addProject = project => ({
 export const removeProject = projectID => ({
   type: REMOVE_PROJECT,
   payload: projectID
+});
+
+/**
+ * Get action to update a project
+ *
+ * @param {string} projectID
+ * @param {object} newData
+ */
+export const updateProject = (projectID, newData) => ({
+  type: UPDATE_PROJECT,
+  payload: {
+    projectID,
+    newData
+  }
 });
