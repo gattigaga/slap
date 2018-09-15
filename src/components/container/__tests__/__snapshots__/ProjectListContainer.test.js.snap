@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectListContainer should renders as connected 1`] = `
+<Component
+  deleteProject={[Function]}
+  items={
+    Array [
+      Object {
+        "contents": Array [
+          Object {
+            "content": "Hello World",
+            "id": "content-1",
+            "position": Object {
+              "x": 32,
+              "y": 32,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+        ],
+        "id": "project-1",
+        "name": "Presentation 1st",
+        "timestamp": 1537028524421,
+      },
+      Object {
+        "contents": Array [
+          Object {
+            "content": "Hello Code",
+            "id": "content-2",
+            "position": Object {
+              "x": 64,
+              "y": 64,
+            },
+            "projectID": "project-2",
+            "slideID": "slide-2",
+            "type": "text",
+          },
+        ],
+        "id": "project-2",
+        "name": "Presentation 2nd",
+        "timestamp": 1537028524421,
+      },
+    ]
+  }
+  onClick={[Function]}
+  onClickDelete={[Function]}
+  openProject={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`ProjectListContainer should renders default 1`] = `
+<ProjectList
+  items={
+    Array [
+      Object {
+        "contents": Array [
+          Object {
+            "content": "Hello World",
+            "id": "content-1",
+            "position": Object {
+              "x": 32,
+              "y": 32,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+          Object {
+            "content": "Stay hungry",
+            "id": "content-2",
+            "position": Object {
+              "x": 128,
+              "y": 96,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+        ],
+        "id": "project-1",
+        "name": "Project 1",
+        "timestamp": 1537004755445,
+      },
+      Object {
+        "contents": Array [
+          Object {
+            "content": "Hello World",
+            "id": "content-1",
+            "position": Object {
+              "x": 32,
+              "y": 32,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+          Object {
+            "content": "Stay hungry",
+            "id": "content-2",
+            "position": Object {
+              "x": 128,
+              "y": 96,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+        ],
+        "id": "project-2",
+        "name": "Project 2",
+        "timestamp": 1537004755445,
+      },
+      Object {
+        "contents": Array [
+          Object {
+            "content": "Hello World",
+            "id": "content-1",
+            "position": Object {
+              "x": 32,
+              "y": 32,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+          Object {
+            "content": "Stay hungry",
+            "id": "content-2",
+            "position": Object {
+              "x": 128,
+              "y": 96,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+        ],
+        "id": "project-3",
+        "name": "Project 3",
+        "timestamp": 1537004755445,
+      },
+    ]
+  }
+  onClick={[Function]}
+  onClickDelete={[Function]}
+/>
+`;
