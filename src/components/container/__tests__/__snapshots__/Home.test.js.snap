@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should renders as connected 1`] = `
+<Component
+  createProject={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`Home should renders default 1`] = `
+<styled.div>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Slap - Simplify Slides Creation
+    </title>
+  </HelmetWrapper>
+  <styled.h1>
+    Slap
+  </styled.h1>
+  <styled.p>
+    Simplify Slides Creation
+  </styled.p>
+  <Styled(Button)
+    caption="Add New Project"
+    icon={<Styled(Component) />}
+    onClick={[Function]}
+  />
+  <Connect(Component) />
+</styled.div>
+`;
