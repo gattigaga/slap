@@ -8,7 +8,7 @@ import Thumbnail from "./Thumbnail";
 import SmallButton from "./SmallButton";
 
 const Container = styled.div`
-  margin-bottom: 16px;
+  margin-bottom: 64px;
 `;
 
 export const Name = styled.h2`
