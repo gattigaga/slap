@@ -6,9 +6,11 @@ import "typeface-roboto";
 import Project from "./Project";
 
 const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  grid-template-rows: auto;
   flex-wrap: wrap;
-  width: 800px;
+  width: 100%;
   justify-content: space-between;
 `;
 
