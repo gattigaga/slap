@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import "typeface-roboto";
 
 const Button = styled.button`
   background: #eb4d4b;
@@ -8,6 +9,7 @@ const Button = styled.button`
   border: 0px;
   padding: 4px 8px;
   font-size: 11px;
+  font-family: Roboto;
   outline: none;
   cursor: pointer;
 
