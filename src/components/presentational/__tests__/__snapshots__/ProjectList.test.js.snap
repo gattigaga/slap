@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectList should renders default 1`] = `
+<styled.div>
+  <Project
+    contents={
+      Array [
+        Object {
+          "content": "Hello World",
+          "id": "content-1",
+          "position": Object {
+            "x": 32,
+            "y": 32,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+        Object {
+          "content": "Stay hungry",
+          "id": "content-2",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+    id="project-1"
+    key="project-1"
+    name="Project 1"
+    onClick={[Function]}
+    onClickDelete={[Function]}
+    timestamp={1537004755445}
+  />
+  <Project
+    contents={
+      Array [
+        Object {
+          "content": "Hello World",
+          "id": "content-1",
+          "position": Object {
+            "x": 32,
+            "y": 32,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+        Object {
+          "content": "Stay hungry",
+          "id": "content-2",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+    id="project-2"
+    key="project-2"
+    name="Project 2"
+    onClick={[Function]}
+    onClickDelete={[Function]}
+    timestamp={1537004755445}
+  />
+  <Project
+    contents={
+      Array [
+        Object {
+          "content": "Hello World",
+          "id": "content-1",
+          "position": Object {
+            "x": 32,
+            "y": 32,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+        Object {
+          "content": "Stay hungry",
+          "id": "content-2",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+    id="project-3"
+    key="project-3"
+    name="Project 3"
+    onClick={[Function]}
+    onClickDelete={[Function]}
+    timestamp={1537004755445}
+  />
+</styled.div>
+`;
+
+exports[`ProjectList should renders without items 1`] = `
+<styled.div>
+  <styled.p>
+    No projects found.
+  </styled.p>
+</styled.div>
+`;
