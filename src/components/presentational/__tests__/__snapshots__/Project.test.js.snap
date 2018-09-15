@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project should renders default 1`] = `
+<styled.div>
+  <Thumbnail
+    contents={
+      Array [
+        Object {
+          "content": "Hello World",
+          "id": "content-1",
+          "position": Object {
+            "x": 32,
+            "y": 32,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+        Object {
+          "content": "Stay hungry",
+          "id": "content-2",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+    onClick={[Function]}
+    width={240}
+  />
+  <styled.h2
+    onClick={[Function]}
+  >
+    My Own Slides
+  </styled.h2>
+  <styled.p>
+    Sep 15, 2018
+  </styled.p>
+  <SmallButton
+    caption="Delete"
+    onClick={[Function]}
+  />
+</styled.div>
+`;
