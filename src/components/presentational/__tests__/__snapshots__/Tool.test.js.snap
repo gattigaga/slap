@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tool should renders default 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <Dummy />
+</styled.div>
+`;
+
+exports[`Tool should renders in active 1`] = `
+<styled.div
+  isActive={true}
+  onClick={[Function]}
+>
+  <Dummy />
+</styled.div>
+`;
