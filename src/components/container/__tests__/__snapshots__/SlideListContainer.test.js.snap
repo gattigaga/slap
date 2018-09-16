@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlideListContainer should renders as connected 1`] = `
+<Component
+  active="slide-1"
+  items={
+    Array [
+      Object {
+        "contents": Array [
+          Object {
+            "content": "Hello World",
+            "id": "content-1",
+            "position": Object {
+              "x": 32,
+              "y": 32,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-1",
+            "type": "text",
+          },
+        ],
+        "id": "slide-1",
+        "projectID": "project-1",
+      },
+      Object {
+        "contents": Array [
+          Object {
+            "content": "Hello Code",
+            "id": "content-2",
+            "position": Object {
+              "x": 64,
+              "y": 64,
+            },
+            "projectID": "project-1",
+            "slideID": "slide-2",
+            "type": "text",
+          },
+        ],
+        "id": "slide-2",
+        "projectID": "project-1",
+      },
+    ]
+  }
+  onClick={[Function]}
+  onClickDelete={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`SlideListContainer should renders default 1`] = `
+<SlideList
+  active="slide-1"
+  items={
+    Array [
+      Object {
+        "contents": Array [],
+        "id": "slide-1",
+        "projectID": "project-1",
+      },
+      Object {
+        "contents": Array [],
+        "id": "slide-2",
+        "projectID": "project-1",
+      },
+    ]
+  }
+  onClick={[Function]}
+  onClickDelete={[Function]}
+/>
+`;
