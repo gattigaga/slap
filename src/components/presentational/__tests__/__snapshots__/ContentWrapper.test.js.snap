@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentWrapper should renders default 1`] = `
+<g>
+  <styled.rect
+    height={48}
+    width={320}
+    x={32}
+    y={32}
+  />
+  <styled.rect
+    height={8}
+    key="0"
+    style={
+      Object {
+        "cursor": "nw-resize",
+      }
+    }
+    width={8}
+    x={28}
+    y={28}
+  />
+  <styled.rect
+    height={8}
+    key="1"
+    style={
+      Object {
+        "cursor": "n-resize",
+      }
+    }
+    width={8}
+    x={188}
+    y={28}
+  />
+  <styled.rect
+    height={8}
+    key="2"
+    style={
+      Object {
+        "cursor": "ne-resize",
+      }
+    }
+    width={8}
+    x={348}
+    y={28}
+  />
+  <styled.rect
+    height={8}
+    key="3"
+    style={
+      Object {
+        "cursor": "w-resize",
+      }
+    }
+    width={8}
+    x={28}
+    y={52}
+  />
+  <styled.rect
+    height={8}
+    key="4"
+    style={
+      Object {
+        "cursor": "e-resize",
+      }
+    }
+    width={8}
+    x={348}
+    y={52}
+  />
+  <styled.rect
+    height={8}
+    key="5"
+    style={
+      Object {
+        "cursor": "sw-resize",
+      }
+    }
+    width={8}
+    x={28}
+    y={76}
+  />
+  <styled.rect
+    height={8}
+    key="6"
+    style={
+      Object {
+        "cursor": "s-resize",
+      }
+    }
+    width={8}
+    x={188}
+    y={76}
+  />
+  <styled.rect
+    height={8}
+    key="7"
+    style={
+      Object {
+        "cursor": "se-resize",
+      }
+    }
+    width={8}
+    x={348}
+    y={76}
+  />
+</g>
+`;
