@@ -6,8 +6,10 @@ import "typeface-roboto";
 import Slide from "./Slide";
 
 const Container = styled.div`
-  width: 200px;
+  width: 220px;
   border-right: 1px solid #ccc;
+  background: #eee;
+  overflow-y: auto;
 `;
 
 const SlideList = ({ className, items, active, onClick, onClickDelete }) => (
