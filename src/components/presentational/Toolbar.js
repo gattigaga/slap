@@ -11,6 +11,7 @@ const Container = styled.div`
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 4px 24px;
+  box-sizing: border-box;
 `;
 
 const Toolbar = ({ className, items }) => (
