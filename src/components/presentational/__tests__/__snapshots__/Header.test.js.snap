@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should renders default 1`] = `
+<styled.div>
+  <styled.input
+    onChange={[Function]}
+    value="My Project"
+  />
+  <Styled(Button)
+    caption="Play"
+    icon={<Styled(Component) />}
+    onClick={[Function]}
+  />
+  <Styled(Button)
+    caption="Close"
+    icon={<Styled(Component) />}
+    onClick={[Function]}
+  />
+</styled.div>
+`;
