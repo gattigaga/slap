@@ -13,7 +13,8 @@ import activeContext from "../store/reducers/activeContext";
 
 const persistConfig = {
   key: "root",
-  storage
+  storage,
+  whitelist: ["projects", "slides", "contents"]
 };
 
 const reducers = combineReducers({
