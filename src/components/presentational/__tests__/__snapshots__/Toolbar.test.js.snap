@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar should renders default 1`] = `
+<styled.div>
+  <Tool
+    icon={
+      <Dummy
+        name="first"
+      />
+    }
+    key="0"
+    onClick={[Function]}
+  />
+  <Tool
+    icon={
+      <Dummy
+        name="second"
+      />
+    }
+    key="1"
+    onClick={[Function]}
+  />
+  <Tool
+    icon={
+      <Dummy
+        name="third"
+      />
+    }
+    isActive={true}
+    key="2"
+    onClick={[Function]}
+  />
+</styled.div>
+`;
