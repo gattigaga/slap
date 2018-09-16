@@ -16,7 +16,7 @@ export const Text = styled.input`
   padding: 8px;
   box-sizing: border-box;
   outline: none;
-  background: white;
+  background: none;
   cursor: ${({ isActive, disabled }) =>
     isActive && disabled ? "pointer" : "auto"};
 `;
