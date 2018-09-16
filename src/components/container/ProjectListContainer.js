@@ -37,8 +37,12 @@ const mapStateToProps = ({ projects, slides, contents }) => {
 
 const mapDispatchToProps = dispatch => ({
   openProject: slides => project => {
+    const currentSlides = slides.filter(
+      slide => slide.projectID === project.id
+    );
+
     dispatch(setActiveProjectID(project.id));
-    dispatch(setActiveSlideID(slides[0].id));
+    dispatch(setActiveSlideID(currentSlides[0].id));
   },
   deleteProject: (slides, contents) => project => {
     const call = command => item => dispatch(command(item.id));
