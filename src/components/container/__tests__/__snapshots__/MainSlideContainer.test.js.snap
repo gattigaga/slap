@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainSlideContainer should renders as connected 1`] = `
+<MainSlideContainer
+  active="content-1"
+  activeContext="arrow"
+  activeProjectID="project-1"
+  activeSlideID="slide-1"
+  contents={
+    Array [
+      Object {
+        "content": "Hello World",
+        "id": "content-1",
+        "position": Object {
+          "x": 32,
+          "y": 32,
+        },
+        "projectID": "project-1",
+        "slideID": "slide-1",
+        "type": "text",
+      },
+      Object {
+        "content": "Hello Code",
+        "id": "content-2",
+        "position": Object {
+          "x": 64,
+          "y": 64,
+        },
+        "projectID": "project-1",
+        "slideID": "slide-1",
+        "type": "text",
+      },
+    ]
+  }
+  cursor="auto"
+  isContentEditable={false}
+  onChangeContent={[Function]}
+  onClick={[Function]}
+  onClickContent={[Function]}
+  onDoubleClickContent={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`MainSlideContainer should renders default 1`] = `
+<MainSlide
+  active="content-1"
+  contents={
+    Array [
+      Object {
+        "content": "Hello World",
+        "id": "content-1",
+        "position": Object {
+          "x": 32,
+          "y": 32,
+        },
+        "projectID": "project-1",
+        "slideID": "slide-1",
+        "type": "text",
+      },
+      Object {
+        "content": "Hello Code",
+        "id": "content-2",
+        "position": Object {
+          "x": 64,
+          "y": 64,
+        },
+        "projectID": "project-1",
+        "slideID": "slide-1",
+        "type": "text",
+      },
+    ]
+  }
+  cursor="auto"
+  onChangeContent={[Function]}
+  onClick={[Function]}
+  onClickContent={[Function]}
+  onDoubleClickContent={[Function]}
+  onMouseMove={[Function]}
+/>
+`;
