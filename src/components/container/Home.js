@@ -12,6 +12,8 @@ import { addSlide } from "../../store/actions/slides";
 import { addContent } from "../../store/actions/contents";
 import ProjectListContainer from "./ProjectListContainer";
 import Button from "../presentational/Button";
+import { setActiveSlideID } from "../../store/actions/activeSlideID";
+import { setActiveProjectID } from "../../store/actions/activeProjectID";
 
 const Container = styled.div`
   width: 100%;
@@ -96,6 +98,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(addProject(project));
     dispatch(addSlide(slide));
     dispatch(addContent(content));
+    dispatch(setActiveProjectID(project.id));
+    dispatch(setActiveSlideID(slide.id));
   }
 });
 

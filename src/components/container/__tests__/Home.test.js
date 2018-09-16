@@ -73,6 +73,14 @@ describe("Home", () => {
         type: "ADD_CONTENT",
         payload: expect.any(Object)
       },
+      {
+        type: "SET_ACTIVE_PROJECT_ID",
+        payload: expect.any(String)
+      },
+      {
+        type: "SET_ACTIVE_SLIDE_ID",
+        payload: expect.any(String)
+      }
     ]);
   });
 });
