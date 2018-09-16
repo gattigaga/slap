@@ -9,6 +9,7 @@ jest.mock("../HeaderContainer", () => "HeaderContainer");
 jest.mock("../SlideListContainer", () => "SlideListContainer");
 jest.mock("../ToolbarContainer", () => "ToolbarContainer");
 jest.mock("../MainSlideContainer", () => "MainSlideContainer");
+jest.mock("../PlayerContainer", () => "PlayerContainer");
 
 describe("Editor", () => {
   Date.now = jest.fn(() => 1537028524421);
@@ -59,6 +60,12 @@ describe("Editor", () => {
 
   it("should renders default", () => {
     const { wrapper } = setup();
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("should renders with player", () => {
+    const { wrapper } = setup({ isPlayed: true });
 
     expect(wrapper).toMatchSnapshot();
   });

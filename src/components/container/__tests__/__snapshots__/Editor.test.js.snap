@@ -60,3 +60,27 @@ exports[`Editor should renders default 1`] = `
   </styled.div>
 </styled.div>
 `;
+
+exports[`Editor should renders with player 1`] = `
+<styled.div
+  onKeyPress={[Function]}
+  tabIndex={0}
+>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      My Project
+       - Slap
+    </title>
+  </HelmetWrapper>
+  <HeaderContainer />
+  <ToolbarContainer />
+  <styled.div>
+    <SlideListContainer />
+    <MainSlideContainer />
+  </styled.div>
+  <PlayerContainer />
+</styled.div>
+`;

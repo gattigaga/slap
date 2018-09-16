@@ -9,6 +9,7 @@ import HeaderContainer from "./HeaderContainer";
 import SlideListContainer from "./SlideListContainer";
 import ToolbarContainer from "./ToolbarContainer";
 import MainSlideContainer from "./MainSlideContainer";
+import PlayerContainer from "./PlayerContainer";
 import { removeContent } from "../../store/actions/contents";
 
 const Container = styled.div`
@@ -26,7 +27,7 @@ const Wrapper = styled.div`
   background: #eee;
 `;
 
-export const Editor = ({ name, deleteContent }) => (
+export const Editor = ({ name, isPlayed, deleteContent }) => (
   <Container tabIndex={0} onKeyPress={deleteContent}>
     <Helmet>
       <title>{name} - Slap</title>
@@ -37,12 +38,14 @@ export const Editor = ({ name, deleteContent }) => (
       <SlideListContainer />
       <MainSlideContainer />
     </Wrapper>
+    {isPlayed && <PlayerContainer />}
   </Container>
 );
 
 Editor.propTypes = {
   name: PropTypes.string,
-  deleteContent: PropTypes.func
+  deleteContent: PropTypes.func,
+  isPlayed: PropTypes.bool
 };
 
 const mapStateToProps = ({ projects, activeProjectID, activeContentID }) => {
@@ -50,7 +53,8 @@ const mapStateToProps = ({ projects, activeProjectID, activeContentID }) => {
 
   return {
     activeContentID,
-    name: project.name
+    name: project.name,
+    isPlayed: project.isPlayed
   };
 };
 
@@ -61,12 +65,13 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mergeProps = (stateProps, dispatchProps, ownProps) => {
-  const { name, activeContentID } = stateProps;
+  const { name, isPlayed, activeContentID } = stateProps;
   const { deleteContent } = dispatchProps;
 
   return {
     ...ownProps,
     name,
+    isPlayed,
     deleteContent: event => {
       if (event.key !== "Delete") return;
       deleteContent(activeContentID);
