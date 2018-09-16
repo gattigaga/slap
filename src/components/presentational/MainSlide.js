@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
@@ -13,33 +13,43 @@ const Container = styled.svg`
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
 `;
 
-const MainSlide = ({
-  contents,
-  active,
-  cursor,
-  onClick,
-  onChangeContent,
-  onClickContent,
-  onDoubleClickContent,
-  onMouseMove,
-  isContentEditable
-}) => (
-  <Container onClick={onClick} onMouseMove={onMouseMove} cursor={cursor}>
-    {contents.map(content => (
-      <Textbox
-        key={content.id}
-        width={320}
-        height={64}
-        {...content.position}
-        value={content.content}
-        onChange={event => onChangeContent(event, content)}
-        onClick={event => onClickContent(event, content)}
-        onDoubleClick={event => onDoubleClickContent(event, content)}
-        isActive={active === content.id}
-        isEditable={isContentEditable}
-      />
-    ))}
-  </Container>
+const MainSlide = forwardRef(
+  (
+    {
+      contents,
+      active,
+      cursor,
+      onClick,
+      onChangeContent,
+      onClickContent,
+      onDoubleClickContent,
+      onMouseMove,
+      isContentEditable
+    },
+    ref
+  ) => (
+    <Container
+      innerRef={ref}
+      onClick={onClick}
+      onMouseMove={onMouseMove}
+      cursor={cursor}
+    >
+      {contents.map(content => (
+        <Textbox
+          key={content.id}
+          width={320}
+          height={64}
+          {...content.position}
+          value={content.content}
+          onChange={event => onChangeContent(event, content)}
+          onClick={event => onClickContent(event, content)}
+          onDoubleClick={event => onDoubleClickContent(event, content)}
+          isActive={active === content.id}
+          isEditable={isContentEditable}
+        />
+      ))}
+    </Container>
+  )
 );
 
 MainSlide.propTypes = {
