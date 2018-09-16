@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player should renders default 1`] = `
+<styled.div>
+  <Styled(Component)
+    onClick={[Function]}
+  />
+  <MainSlide
+    contents={
+      Array [
+        Object {
+          "content": "Stay hungry",
+          "id": "content-1",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+  />
+  <Styled(Component)
+    onClick={[Function]}
+  />
+  <Styled(Component)
+    onClick={[Function]}
+  />
+</styled.div>
+`;
