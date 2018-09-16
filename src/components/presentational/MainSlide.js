@@ -16,6 +16,7 @@ const Container = styled.svg`
 const MainSlide = ({
   contents,
   active,
+  cursor,
   onClick,
   onChangeContent,
   onClickContent,
@@ -23,7 +24,7 @@ const MainSlide = ({
   onMouseMove,
   isContentEditable
 }) => (
-  <Container onClick={onClick} onMouseMove={onMouseMove}>
+  <Container onClick={onClick} onMouseMove={onMouseMove} cursor={cursor}>
     {contents.map(content => (
       <Textbox
         key={content.id}
@@ -44,6 +45,7 @@ const MainSlide = ({
 MainSlide.propTypes = {
   contents: PropTypes.array,
   active: PropTypes.string,
+  cursor: PropTypes.string,
   onClick: PropTypes.func,
   onChangeContent: PropTypes.func,
   onClickContent: PropTypes.func,

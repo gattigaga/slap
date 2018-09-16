@@ -2,6 +2,7 @@
 
 exports[`MainSlide should renders default 1`] = `
 <styled.svg
+  cursor="pointer"
   onClick={[Function]}
   onMouseMove={[Function]}
 >

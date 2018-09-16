@@ -32,6 +32,7 @@ describe("MainSlide", () => {
           }
         }
       ],
+      cursor: "pointer",
       onClick: jest.fn(),
       onChangeContent: jest.fn(),
       onClickContent: jest.fn(),
