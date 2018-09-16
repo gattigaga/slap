@@ -9,6 +9,7 @@ import activeProjectID from "../store/reducers/activeProjectID";
 import activeSlideID from "../store/reducers/activeSlideID";
 import activeContentID from "../store/reducers/activeContentID";
 import isContentEditable from "../store/reducers/isContentEditable";
+import activeContext from "../store/reducers/activeContext";
 
 const persistConfig = {
   key: "root",
@@ -22,7 +23,8 @@ const reducers = combineReducers({
   activeProjectID,
   activeSlideID,
   activeContentID,
-  isContentEditable
+  isContentEditable,
+  activeContext
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);
