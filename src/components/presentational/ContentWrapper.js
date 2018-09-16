@@ -7,6 +7,7 @@ const Outline = styled.rect`
   fill: none;
   stroke: #686de0;
   stroke-width: 2px;
+  cursor: pointer;
 `;
 
 const Point = styled.rect`
