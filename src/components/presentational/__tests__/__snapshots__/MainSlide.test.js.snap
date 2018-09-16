@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainSlide should renders default 1`] = `
+<styled.svg
+  onClick={[Function]}
+  onMouseMove={[Function]}
+>
+  <Textbox
+    height={64}
+    isActive={false}
+    key="content-1"
+    onChange={[Function]}
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+    value="Hello World"
+    width={320}
+    x={32}
+    y={32}
+  />
+  <Textbox
+    height={64}
+    isActive={false}
+    key="content-2"
+    onChange={[Function]}
+    onClick={[Function]}
+    onDoubleClick={[Function]}
+    value="Stay hungry"
+    width={320}
+    x={128}
+    y={96}
+  />
+</styled.svg>
+`;
