@@ -7,12 +7,13 @@ import "typeface-roboto";
 import Thumbnail from "./Thumbnail";
 
 const Container = styled.div`
-  width: 180px;
+  width: 200px;
   background: ${({ isActive }) => (isActive ? "#ddd" : "#eee")};
   margin-right: 4px;
   display: flex;
   justify-content: flex-end;
   padding: 4px 8px;
+  box-sizing: border-box;
 `;
 
 const Index = styled.p`
