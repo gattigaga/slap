@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SlideList should renders default 1`] = `
+<styled.div>
+  <Slide
+    contents={
+      Array [
+        Object {
+          "content": "Stay hungry",
+          "id": "content-1",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+    id="slide-1"
+    index={1}
+    isActive={false}
+    key="0"
+    onClick={[Function]}
+    onClickDelete={[Function]}
+    projectID="project-1"
+  />
+  <Slide
+    contents={
+      Array [
+        Object {
+          "content": "Stay foolish",
+          "id": "content-2",
+          "position": Object {
+            "x": 128,
+            "y": 128,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-2",
+          "type": "text",
+        },
+      ]
+    }
+    id="slide-2"
+    index={2}
+    isActive={false}
+    key="1"
+    onClick={[Function]}
+    onClickDelete={[Function]}
+    projectID="project-1"
+  />
+</styled.div>
+`;
