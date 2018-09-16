@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slide should renders default 1`] = `
+<styled.div>
+  <styled.p>
+    1
+  </styled.p>
+  <Thumbnail
+    contents={
+      Array [
+        Object {
+          "content": "Hello World",
+          "id": "content-1",
+          "position": Object {
+            "x": 32,
+            "y": 32,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+        Object {
+          "content": "Stay hungry",
+          "id": "content-2",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+    onClick={[Function]}
+    width={128}
+  />
+  <Styled(Component)
+    onClick={[Function]}
+  />
+</styled.div>
+`;
+
+exports[`Slide should renders in active 1`] = `
+<styled.div
+  isActive={true}
+>
+  <styled.p>
+    1
+  </styled.p>
+  <Thumbnail
+    contents={
+      Array [
+        Object {
+          "content": "Hello World",
+          "id": "content-1",
+          "position": Object {
+            "x": 32,
+            "y": 32,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+        Object {
+          "content": "Stay hungry",
+          "id": "content-2",
+          "position": Object {
+            "x": 128,
+            "y": 96,
+          },
+          "projectID": "project-1",
+          "slideID": "slide-1",
+          "type": "text",
+        },
+      ]
+    }
+    onClick={[Function]}
+    width={128}
+  />
+  <Styled(Component)
+    onClick={[Function]}
+  />
+</styled.div>
+`;
