@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textbox should renders default 1`] = `
+<g
+  onClick={[Function]}
+  onDoubleClick={[Function]}
+>
+  <foreignObject
+    height={48}
+    width={420}
+    x={24}
+    y={24}
+  >
+    <styled.input
+      disabled={true}
+      height={48}
+      onChange={[Function]}
+      value="My Text"
+      width={420}
+    />
+  </foreignObject>
+</g>
+`;
+
+exports[`Textbox should renders in active 1`] = `
+<g
+  onClick={[Function]}
+  onDoubleClick={[Function]}
+>
+  <foreignObject
+    height={48}
+    width={420}
+    x={24}
+    y={24}
+  >
+    <styled.input
+      disabled={true}
+      height={48}
+      isActive={true}
+      onChange={[Function]}
+      value="My Text"
+      width={420}
+    />
+  </foreignObject>
+  <ContentWrapper
+    height={48}
+    width={420}
+    x={24}
+    y={24}
+  />
+</g>
+`;
+
+exports[`Textbox should renders in editable 1`] = `
+<g
+  onClick={[Function]}
+  onDoubleClick={[Function]}
+>
+  <foreignObject
+    height={48}
+    width={420}
+    x={24}
+    y={24}
+  >
+    <styled.input
+      disabled={false}
+      height={48}
+      isActive={true}
+      onChange={[Function]}
+      value="My Text"
+      width={420}
+    />
+  </foreignObject>
+  <ContentWrapper
+    height={48}
+    width={420}
+    x={24}
+    y={24}
+  />
+</g>
+`;
